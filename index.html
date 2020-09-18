@@ -9,97 +9,95 @@
 </head>
 <body>
     <div class="container">
-        <div class="row">
-            <div class="image-container">
-                <div class="content">
-                    <h1>Welcome to Coffee shop</h1>
-                    <p>Checkout our special offers for this season!</p> 
-                </div>
-                <img class="snow" src="./assets/snow2.png" alt="snow" />
-                <img class="main-image" src="./assets/test2.svg" alt="coffee" />
+        <div class="image-container">
+            <div class="content">
+                <h1>Welcome to Coffee shop</h1>
+                <p>Checkout our special offers for this season!</p> 
             </div>
-            <div class="form-container">
-                <span id="quantity" class="badge">0</span><img src="./assets/cart.svg" alt="cart" class="cart-image" onclick="toggleCart()" />
-                <div class="order-form">
-                    <div class="menu-header">
-                        <img src="./assets/menu.svg" alt="menu" class="menu-image" />
-                        <p>Place your order</p>
-                    </div>
-                    <ul id="list" class="menu-items">
-                        <li class="menu-item">
-                            <div><img class="flaticons" src="./assets/icon1.svg" alt="icon1"/> Cappucino</div>
-                            <div><del>₹60</del> ₹40</div>
-                            <div id="icons1" class="icons">
-                                <div class="plus">
-                                    <i onclick="addItem(1)" class="fas fa-plus-circle"></i>
-                                </div>
-                                <div class="minus">
-                                    <i id="item1" onclick="removeItem(1)" class="fas fa-minus-circle" style="display: none;"></i>
-                                </div>
-                                <span id="badge1" style="display: none;" class="badge">0</span>
-                            </div>
-                        </li><br>
-                        <li class="menu-item">
-                            <div><img class="flaticons" src="./assets/icon2.svg" alt="icon2"/> Espresso</div>
-                            <div><del>₹85</del> ₹75</div>
-                            <div id="icons2" class="icons">
-                                <div class="plus">
-                                    <i onclick="addItem(2)" class="fas fa-plus-circle"></i>
-                                </div>
-                                <div class="minus">
-                                    <i id="item2" onclick="removeItem(2)" class="fas fa-minus-circle" style="display: none;"></i>
-                                </div>
-                                <span id="badge2" style="display: none;" class="badge">0</span>
-                            </div>
-                        </li><br>
-                        <li class="menu-item">
-                            <div><img class="flaticons" src="./assets/icon3.svg" alt="icon3"/> Affogato</div>
-                            <div><del>₹90</del> ₹60</div>
-                            <div id="icons3" class="icons">
-                                <div class="plus">
-                                    <i onclick="addItem(3)" class="fas fa-plus-circle"></i>
-                                </div>
-                                <div class="minus">
-                                    <i id="item3" onclick="removeItem(3)" class="fas fa-minus-circle" style="display: none;"></i>
-                                </div>
-                                <span id="badge3" style="display: none;" class="badge">0</span>
-                            </div>
-                        </li><br>
-                        <li class="menu-item">
-                            <div><img class="flaticons" src="./assets/icon4.svg" alt="icon4"/> Caffe Latte</div>
-                            <div><del>₹100</del> ₹70</div>
-                            <div id="icons4" class="icons">
-                                <div class="plus">
-                                    <i onclick="addItem(4)" class="fas fa-plus-circle"></i>
-                                </div>
-                                <div class="minus">
-                                    <i id="item4" onclick="removeItem(4)" class="fas fa-minus-circle" style="display: none;"></i>
-                                </div>
-                                <span id="badge4" style="display: none;" class="badge">0</span>
-                            </div>
-                        </li><br>
-                        <li class="menu-item">
-                            <div><img class="flaticons" src="./assets/icon5.svg" alt="icon5"/> Caffe Mocha</div>
-                            <div><del>₹95</del> ₹80</div>
-                            <div id="icons5" class="icons">
-                                <div class="plus">
-                                    <i onclick="addItem(5)" class="fas fa-plus-circle"></i>
-                                </div>
-                                <div class="minus">
-                                    <i id="item5" onclick="removeItem(5)" class="fas fa-minus-circle" style="display: none;"></i>
-                                </div>
-                                <span id="badge5" style="display: none;" class="badge">0</span>
-                            </div>
-                        </li><br>
-                        <li style="display: flex; width: 68%; justify-content: space-between";><button onclick="toggleCart()" class="to-cart"><i class="fas fa-shopping-cart"></i> View Cart</button> <div id="bill" class="total">Total Amount: ₹0</div></li>
-                    </ul>
+            <img class="snow" src="./assets/snow2.png" alt="snow" />
+            <img class="main-image" src="./assets/test2.svg" alt="coffee" />
+        </div>
+        <div class="form-container">
+            <span id="quantity" class="badge">0</span><img src="./assets/cart.svg" alt="cart" class="cart-image" onclick="toggleCart()" />
+            <div class="order-form">
+                <div class="menu-header">
+                    <img src="./assets/menu.svg" alt="menu" class="menu-image" />
+                    <p>Place your order</p>
                 </div>
-                <img src="./assets/tea.svg" alt="chill" class="chill" />
-                <div id="cart" class="cart-dropdown" style="display: none;">
-                    <div id="cart-items" class="cart-items">
-                    </div>
-                    <button onclick="checkout()" style="display: block; margin: auto; background-color: #cc33ee;" class="to-cart"><i class="fas fa-money-bill-wave"></i></i> Place Order</button>
+                <ul id="list" class="menu-items">
+                    <li class="menu-item">
+                        <div><img class="flaticons" src="./assets/icon1.svg" alt="icon1"/> Cappucino</div>
+                        <div><del>₹60</del> ₹40</div>
+                        <div id="icons1" class="icons">
+                            <div class="plus">
+                                <i onclick="addItem(1)" class="fas fa-plus-circle"></i>
+                            </div>
+                            <div class="minus">
+                                <i id="item1" onclick="removeItem(1)" class="fas fa-minus-circle" style="display: none;"></i>
+                            </div>
+                            <span id="badge1" style="display: none;" class="badge">0</span>
+                        </div>
+                    </li><br>
+                    <li class="menu-item">
+                        <div><img class="flaticons" src="./assets/icon2.svg" alt="icon2"/> Espresso</div>
+                        <div><del>₹85</del> ₹75</div>
+                        <div id="icons2" class="icons">
+                            <div class="plus">
+                                <i onclick="addItem(2)" class="fas fa-plus-circle"></i>
+                            </div>
+                            <div class="minus">
+                                <i id="item2" onclick="removeItem(2)" class="fas fa-minus-circle" style="display: none;"></i>
+                            </div>
+                            <span id="badge2" style="display: none;" class="badge">0</span>
+                        </div>
+                    </li><br>
+                    <li class="menu-item">
+                        <div><img class="flaticons" src="./assets/icon3.svg" alt="icon3"/> Affogato</div>
+                        <div><del>₹90</del> ₹60</div>
+                        <div id="icons3" class="icons">
+                            <div class="plus">
+                                <i onclick="addItem(3)" class="fas fa-plus-circle"></i>
+                            </div>
+                            <div class="minus">
+                                <i id="item3" onclick="removeItem(3)" class="fas fa-minus-circle" style="display: none;"></i>
+                            </div>
+                            <span id="badge3" style="display: none;" class="badge">0</span>
+                        </div>
+                    </li><br>
+                    <li class="menu-item">
+                        <div><img class="flaticons" src="./assets/icon4.svg" alt="icon4"/> Caffe Latte</div>
+                        <div><del>₹100</del> ₹70</div>
+                        <div id="icons4" class="icons">
+                            <div class="plus">
+                                <i onclick="addItem(4)" class="fas fa-plus-circle"></i>
+                            </div>
+                            <div class="minus">
+                                <i id="item4" onclick="removeItem(4)" class="fas fa-minus-circle" style="display: none;"></i>
+                            </div>
+                            <span id="badge4" style="display: none;" class="badge">0</span>
+                        </div>
+                    </li><br>
+                    <li class="menu-item">
+                        <div><img class="flaticons" src="./assets/icon5.svg" alt="icon5"/> Caffe Mocha</div>
+                        <div><del>₹95</del> ₹80</div>
+                        <div id="icons5" class="icons">
+                            <div class="plus">
+                                <i onclick="addItem(5)" class="fas fa-plus-circle"></i>
+                            </div>
+                            <div class="minus">
+                                <i id="item5" onclick="removeItem(5)" class="fas fa-minus-circle" style="display: none;"></i>
+                            </div>
+                            <span id="badge5" style="display: none;" class="badge">0</span>
+                        </div>
+                    </li><br>
+                    <li style="display: flex; width: 68%; justify-content: space-between";><button onclick="toggleCart()" class="to-cart"><i class="fas fa-shopping-cart"></i> View Cart</button> <div id="bill" class="total">Total Amount: ₹0</div></li>
+                </ul>
+            </div>
+            <img src="./assets/tea.svg" alt="chill" class="chill" />
+            <div id="cart" class="cart-dropdown" style="display: none;">
+                <div id="cart-items" class="cart-items">
                 </div>
+                <button onclick="checkout()" style="display: block; margin: auto; background-color: #cc33ee;" class="to-cart"><i class="fas fa-money-bill-wave"></i></i> Place Order</button>
             </div>
         </div>
     </div>
