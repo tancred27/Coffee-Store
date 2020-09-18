@@ -166,7 +166,9 @@ body {
     object-fit: contain;
     width: 10rem;
     z-index: 7;
-    transform: translate(360%, -35%);
+    bottom: 0;
+    right: 0;
+    transform: translate(-10%, -10%);
 }
 
 .badge {
