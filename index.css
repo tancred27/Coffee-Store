@@ -99,6 +99,7 @@ body {
     top: 1rem;
     right: 1rem;
     position: absolute;
+    z-index: 7;
 }
 
 .form-container {
@@ -215,7 +216,7 @@ body {
     background-color: #fff;
     top: 90px;
     right: 40px;
-    z-index: 5;
+    z-index: 8;
 }
 
 .cart-items {
@@ -312,11 +313,9 @@ body {
         height: 200px;
         top: 200px;
         left: 40px;
-        z-index: 7;
     }
     
     .cart-image {
-        z-index: 7;
         left: 1%;
         top: 21%;
         max-width: 5rem;
