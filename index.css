@@ -116,6 +116,7 @@ body {
    left: 75%;
    transform: translate(-50%, -50%);
    width: 50%;
+   z-index: 7;
 }
 
 .menu-header {
