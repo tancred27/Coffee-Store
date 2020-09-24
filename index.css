@@ -174,7 +174,7 @@ body {
 }
 
 .badge {
-    margin-bottom: 0.38rem;
+    margin-bottom: 0.17rem;
     height: 1.2rem;
     width: 1.2rem;
     background-color: #17B9C8;
@@ -291,7 +291,6 @@ body {
     }
     
     .order-form {
-        z-index: 7;
         width: 100%;
         left: 65%;
         top: 80%;
